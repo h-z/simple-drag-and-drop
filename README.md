@@ -25,17 +25,17 @@ observer object methods:
 
 
 Dnd.addDrop(htmlelement, {
-  hover: function(drag, drop, e) {
-		$$('.draganddrop-sortinfo').each(function(f){
-			f.removeClassName('draganddrop-hoverinfo');
-		});
-		var ss = drop.siblings();
-		ss.push(drop);
-		ss.each(function(sib){
-			sib.addClassName('draganddrop-hoverinfo');
-		});
-	},
-	drop: function(drag, drop, e) {
-		getCurrentTable(drop).startDoingSomething(drag, drop);
-	}
-});
+    hover: function(drag, drop, e) {
+    	$$('.draganddrop-sortinfo').each(function(f){
+    		f.removeClassName('draganddrop-hoverinfo');
+    	});
+    	var ss = drop.siblings();
+    	ss.push(drop);
+    	ss.each(function(sib){
+    		sib.addClassName('draganddrop-hoverinfo');
+    	});
+    },
+    drop: function(drag, drop, e) {
+    	getCurrentTable(drop).startDoingSomething(drag, drop);
+    }
+    });
