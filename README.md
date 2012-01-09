@@ -23,7 +23,7 @@ The drag(gable) object can be prepared to travel with the mouse cursor. It can f
 
 ###Drop object 
 
-A drop(pable) object waits for draggable to be dropped or hovered on itself. Its event listeners accepts both objects. 
+A drop(pable) object waits for draggable to be dropped or hovered on itself. Its event listeners accept both objects. 
 
 ######methods and fields:
 
