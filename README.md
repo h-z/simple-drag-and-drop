@@ -2,7 +2,11 @@
 
 ## Javascript object for drag'n'drop functionality
 
-drag object methods and fields:
+I have created this little javascript file to step in place of the famous scriptaculous library's (http://madrobby.github.com/scriptaculous/draggable/) Draggable and Droppable classes.
+
+It's lightweight and easy to use. The API is somewhat resembling to the original, but uses less memory. It could be crucial in building applications with hundreds of draggable and droppable objects.
+
+####drag object methods and fields:
 
  * `start(drag, event)` function, runs at drag start
 
@@ -13,7 +17,7 @@ drag object methods and fields:
  * `movable true|false` should the given object move along the mouse pointer
 
 
-drop object methods and fields:
+####drop object methods and fields:
 
  * `drop(drag, drop, event)` function, runs when a drag object is dropped onto a drop object
 
@@ -24,7 +28,7 @@ drop object methods and fields:
  * `hoverclass` string css class of drop object only if a drag object hovers above it
 
 
-observer object methods:
+####observer object methods:
 
  * `start(drag, event)` function, runs at drag start
 
