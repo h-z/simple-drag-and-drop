@@ -23,8 +23,8 @@ observer object methods:
 
 # Example
 
-
-Dnd.addDrop(htmlelement, {
+    
+    Dnd.addDrop(htmlelement, {
     hover: function(drag, drop, e) {
     	$$('.draganddrop-sortinfo').each(function(f){
     		f.removeClassName('draganddrop-hoverinfo');
@@ -39,3 +39,4 @@ Dnd.addDrop(htmlelement, {
     	getCurrentTable(drop).startDoingSomething(drag, drop);
     }
     });
+    
