@@ -2,10 +2,14 @@
 
 Javascript object for drag'n'drop functionality
 drag object methods and fields:
- - `start(drag, event)` function, runs at drag start
- - `move(drag, event)` function, runs at every mousemove during dragging
- - `end(drag, event)` function, runs at the end of a dragging
- - `movable true|false` should the given object move along the mouse pointer
+ * `start(drag, event)` function, runs at drag start
+
+ * `move(drag, event)` function, runs at every mousemove during dragging
+
+ * `end(drag, event)` function, runs at the end of a dragging
+
+ * `movable true|false` should the given object move along the mouse pointer
+
 
 drop object methods and fields:
  - `drop(drag, drop, event)` function, runs when a drag object is dropped onto a drop object
