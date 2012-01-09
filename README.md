@@ -6,7 +6,11 @@ I have created this little javascript file to step in place of the famous script
 
 It's lightweight and easy to use. The API is somewhat resembling to the original, but uses less memory. It could be crucial in building applications with hundreds of draggable and droppable objects.
 
-####drag object methods and fields:
+###Drag object 
+
+The drag(gable) object can be prepared to travel with the mouse cursor. It can fire special events on starting, ending and running through a drag-phase.
+
+######methods and fields:
 
  * `start(drag, event)` function, runs at drag start
 
@@ -17,7 +21,11 @@ It's lightweight and easy to use. The API is somewhat resembling to the original
  * `movable true|false` should the given object move along the mouse pointer
 
 
-####drop object methods and fields:
+###Drop object 
+
+A drop(pable) object waits for draggable to be dropped or hovered on itself. Its event listeners accepts both objects. 
+
+######methods and fields:
 
  * `drop(drag, drop, event)` function, runs when a drag object is dropped onto a drop object
 
@@ -28,7 +36,11 @@ It's lightweight and easy to use. The API is somewhat resembling to the original
  * `hoverclass` string css class of drop object only if a drag object hovers above it
 
 
-####observer object methods:
+###Observer object 
+
+The observer can be attached to the Dnd object to run global, draggable- and droppable-independent functions. It accepts all of the previous two's event listeners.
+
+######methods:
 
  * `start(drag, event)` function, runs at drag start
 
@@ -44,7 +56,6 @@ It's lightweight and easy to use. The API is somewhat resembling to the original
 
 
 # Example
-
     
     Dnd.addDrop(htmlelement, {
     hover: function(drag, drop, e) {
