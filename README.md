@@ -23,6 +23,7 @@ observer object methods:
 
 # Example
 
+
 Dnd.addDrop(htmlelement, {
   hover: function(drag, drop, e) {
 		$$('.draganddrop-sortinfo').each(function(f){
